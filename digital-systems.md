@@ -1,5 +1,13 @@
 # Digital Systems
 
+## Numerical Representation
+
+There are two ways of representing numerical value of quantities: analog and digital.
+
+### Analog Representation
+
+In analog representation a quantity is represented by a continuously variable, proportional indicator.
+
 ## Analog System
 
 ## Digital System
