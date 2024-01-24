@@ -54,7 +54,7 @@ F = A(B+C)(C+D)
 * Idempotent Law
 * Commutative Law
 * Associative Law
-* Distributive Law $$f(x) = x * e^{2 pi i \xi x}$$
+* Distributive Law $$A.(B+C) = A.B+A.C \;\;\; and \;\;\; A+B.C=(A+B).(A+C)$$
 * De Morgan's Theorem
 
 ### De Morgan's Theorem
