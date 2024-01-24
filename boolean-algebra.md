@@ -43,18 +43,18 @@ The order of evaluation is:
 
 Consequence: Parentheses appear around OR expressions. Example,
 
-```
+```text
 F = A(B+C)(C+D)
 ```
 
 ### Boolean Algebra Postulates
 
-* Identity Law -> $$f(x) = x * e^{2 pi i \xi x}$$
-* Domination Law ->
-* Idempotent Law ->&#x20;
-* Commutative Law ->&#x20;
-* Associative Law ->
-* Distributive Law ->$$A.(B+C) = A.B+A.C \;\;\; and \;\;\; A+B.C=(A+B).(A+C)$$
+* Identity Law -> $$A+0=A$$  and  $$A.1=A$$
+* Domination Law -> $$A+1=1$$ and   $$A.0=0$$
+* Idempotent Law -> $$A+A=A$$ and   $$A.A=A$$
+* Commutative Law -> $$A+B=B+A$$ and   $$A.B=B.A$$
+* Associative Law -> $$A+(B+C)=(A+B)+C$$ and   $$A.(B.C)=(A.B).C$$
+* Distributive Law ->$$A.(B+C) = A.B+A.C$$  and  $$A+B.C=(A+B).(A+C)$$
 * De Morgan's Theorem
 
 ### De Morgan's Theorem
