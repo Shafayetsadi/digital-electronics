@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Signal](README.md)
+* [Signal](signal.md)
 * [Digital Systems](digital-systems.md)
 * [Number System](number-system.md)
 * [BCD](bcd.md)
