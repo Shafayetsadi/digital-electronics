@@ -49,18 +49,18 @@ F = A(B+C)(C+D)
 
 ### Boolean Algebra Postulates
 
-* Identity Law
-* Domination Law
-* Idempotent Law
-* Commutative Law
-* Associative Law
-* Distributive Law $$A.(B+C) = A.B+A.C \;\;\; and \;\;\; A+B.C=(A+B).(A+C)$$
+* Identity Law -> $$f(x) = x * e^{2 pi i \xi x}$$
+* Domination Law ->
+* Idempotent Law ->&#x20;
+* Commutative Law ->&#x20;
+* Associative Law ->
+* Distributive Law ->$$A.(B+C) = A.B+A.C \;\;\; and \;\;\; A+B.C=(A+B).(A+C)$$
 * De Morgan's Theorem
 
 ### De Morgan's Theorem
 
 $$
-( X . Y)' = X' + Y'  \;\;\;\; and   \;\;\;\; ( X + Y)' = X'.Y'
+( X . Y)' = X' + Y' \;\;\;\; and \;\;\;\; ( X + Y)' = X'.Y'
 $$
 
 ### Absorption Theorem
@@ -97,3 +97,25 @@ A Boolean function is a function whose arguments, as well as the function itself
 F(X, Y) = X'Y' + XY + X'Y
 ```
 
+#### Some examples:
+
+$$
+F=AB+AB' \\
+$$
+
+There are two ways to convert truth tables to Boolean functions:
+
+* Using Sum of Products / Minterms
+* Using Product of Sums / Maxterms
+
+### Minterm
+
+* Product (AND function)
+* Contains all variables
+* Evaluates to '1' for a specific combination
+
+### Maxterm
+
+* Sum (OR function)
+* Contains all variables
+* Evaluates to '0' for a specific combination
