@@ -12,7 +12,7 @@ converted to a circuit.
 
 * AND is denoted by a dot ( . ).
 * OR is denoted by a plus ( + ).
-* NOT is denoted by an over bar ( $\overline A$ ) , a single quote mark ( ' ),
+* NOT is denoted by an over bar ( $$\overline A$$ ) , a single quote mark ( ' ),
 or tilde sign ( \~ ) before the variable.
 
 Truth table for basic logic operation:
@@ -59,12 +59,12 @@ F = A(B+C)(C+D)
 
 ### Boolean Algebra Postulates
 
-* Identity Law -> $A+0=A \quad and \quad A.1=A$
-* Domination Law -> $A+1=1 \quad and \quad A.0=0$
-* Idempotent Law -> $A+A=A \quad and \quad A.A=A$
-* Commutative Law -> $A+B=B+A \quad and \quad A.B=B.A$
-* Associative Law -> $A+(B+C)=(A+B)+C \quad and*   $A.(B.C)=(A.B).C$
-* Distributive Law -> $A.(B+C) = A.B+A.C \quad and \quad A+B.C=(A+B).(A+C)$
+* Identity Law -> $$A+0=A \quad and \quad A.1=A$$
+* Domination Law -> $$A+1=1 \quad and \quad A.0=0$$
+* Idempotent Law -> $$A+A=A \quad and \quad A.A=A$$
+* Commutative Law -> $$A+B=B+A \quad and \quad A.B=B.A$$
+* Associative Law -> $$A+(B+C)=(A+B)+C \quad and \quad A.(B.C)=(A.B).C$$
+* Distributive Law -> $$A.(B+C) = A.B+A.C \quad and \quad A+B.C=(A+B).(A+C)$$
 * De Morgan's Theorem
 
 ### De Morgan's Theorem
