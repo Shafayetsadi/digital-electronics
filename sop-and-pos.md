@@ -16,8 +16,10 @@ $$
 
 This is known as standard or canonical SOP form. Because it is written directly from a truth table.
 
+Minterm:
 $$
-F(A,B,C)=m_2+m_4+m_5+m_6+m_7
+F(A,B,C)=m_2+m_4+m_5+m_6+m_7 \\
+F(A,B,C)=\sum(2, 4, 5, 6, 7)
 $$
 
 
