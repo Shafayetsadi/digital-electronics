@@ -69,6 +69,9 @@ $$
 X.(X+Y)=X \quad and \quad X+(X.Y)=X
 $$
 
+### Redundancy Theorem
+
+
 ## Logic Gate
 
 In the earliest computers, switches were opened and closed by magnetic fields produced by energizing coils in relays. The switches in turn opened and closed the current paths. Later, vacuum tubes were used to open and close current paths electronically to replace relays. Today, transistors are used as electronic switches that open and close current paths.
@@ -123,7 +126,7 @@ $$
 Example 2:
 
 $$
-\begin{align*} F &= A.B + A.B'C + AB'C' \\ &= A(B+B'C+B'C') \\ &= A(B+C+B'C') \quad \# Distributive \quad law \\ &= A(B+C+C') \quad \# Distributive \quad law \\ &= A(B+1) \\ &= A.1 \\ &= A \end{align*}
+\begin{align*} F &= A.B + A.B'C + AB'C' \\ &= A(B+B'C+B'C') \\ &= A(B+C+B'C') \quad \# Distributive \, law \\ &= A(B+C+C') \quad \# Distributive \, law \\ &= A(B+1) \\ &= A.1 \\ &= A \end{align*}
 $$
 
 Example 3:
@@ -131,8 +134,8 @@ Example 3:
 $$
 \begin{align*}
     F   &= (A+B+C)(A+B'+C)(A+B+C') \\
-        &= (A+B+C)(A+B+C')(A+B'+C) \quad \#Commulative \quad law \\
-        &= (X+C.C')(A+B'+C) \quad let, \quad X=A+B \quad \#Distributive \quad lad \\
+        &= (A+B+C)(A+B+C')(A+B'+C) \quad \#Commulative\, law \\
+        &= (X+C.C')(A+B'+C) \quad let, \quad X=A+B \quad \#Distributive \, law \\
         &= (X+0)(A+B'+C) \\
         &= X(A+B'+C) \\
         &= (A+B)(A+B'+C) \\
