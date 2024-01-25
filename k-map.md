@@ -23,7 +23,10 @@ The required boolean results are transferred from a truth table onto a two-dimen
 Canonical SOP:
 
 $$
-F = \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F = \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C) \\ F = \bar A B \bar C + A \bar B + A B \\ F = \bar A B \bar C + A F= A + B \bar C
+\begin{align*}
+F &= \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F &= \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C) \\ F &= \bar A B \bar C + A \bar B + A B \\ F &= \bar A B \bar C + A \\
+F &= A + B \bar C
+\end{align*}
 $$
 
 <table data-full-width="false"><thead><tr><th align="center">A</th><th align="center">B</th><th width="173" align="center">C</th><th align="center">F</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
@@ -38,7 +41,56 @@ $$
 F = A + B \bar C
 $$
 
-This expression is the same as the one we got from the canonical SOP. We can not further simplify this expression.
+This expression is the same as the one we got from the canonical SOP. We can not further simplify this expression. 
+The resulted expression is minimum but not unique. There may be other expressions which are also minimum.
+
+Example 1:
+$$
+F(A,B,C) = \sum m(1, 3, 5, 7)
+$$
+i. Find out number of vairables and number of cells in the K-Map.
+
+```text
+Number of variables = 3 (A, B, C)
+Number of cells = 2^3 = 8
+```
+
+ii. Draw the K-Map and find the Boolean expression.
+
+$$
+F = C
+$$
+
+Example 2:
+$$
+F(A,B,C) = \sum m(0, 1, 2, 4, 7)
+$$
+
+$$
+F = B'.C' + A'.B' + A'.C' + A.B.C
+$$
+
+Example 3:
+$$
+F(A,B,C) = \sum m(1, 3, 6, 7)
+$$
+
+$$
+F = A.B + A'.C
+$$
+
+Example 4:
+$$
+F(A,B,C) = \sum m(0, 1, 5, 6, 7)
+$$
+
+$$
+F = A.B + A'B' + A.C
+$$
+
+$$
+F = A.B + A'B' + B'.C
+$$
 
 ## Pros ans Cons of K-Map
 
