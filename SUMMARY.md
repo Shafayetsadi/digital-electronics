@@ -6,5 +6,6 @@
 * [BCD](bcd.md)
 * [Gray Code](gray-code.md)
 * [Boolean Algebra](boolean-algebra.md)
+* [SOP & POS](sop-and-pos.md)
 * [K-Map](k-map.md)
 * [QM Method](qm-method.md)
