@@ -23,10 +23,7 @@ The required boolean results are transferred from a truth table onto a two-dimen
 Canonical SOP:
 
 $$
-\begin{align*}
-F &= \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F &= \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C) \\ F &= \bar A B \bar C + A \bar B + A B \\ F &= \bar A B \bar C + A \\
-F &= A + B \bar C
-\end{align*}
+\begin{align*} F &= \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F &= \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C) \\ F &= \bar A B \bar C + A \bar B + A B \\ F &= \bar A B \bar C + A \\ F &= A + B \bar C \end{align*}
 $$
 
 <table data-full-width="false"><thead><tr><th align="center">A</th><th align="center">B</th><th width="173" align="center">C</th><th align="center">F</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
@@ -35,33 +32,43 @@ K-Map Diagram for the above truth table:
 
 <figure><img src=".gitbook/assets/k-map_3_var.png" alt="" width="452"><figcaption><p>K-Map Diagram</p></figcaption></figure>
 
-Check the change of value of variables in rows and columns for each group. The above diagram gives the following simplified expression:
+Check the change of value of variables in rows and columns for each group. We will only take the variables that does not change in a row or a column and do AND operation. We do the same thing for every group and do OR operation with each group.
+
+The above diagram gives the following simplified expression:
 
 $$
 F = A + B \bar C
 $$
 
-This expression is the same as the one we got from the canonical SOP. We can not further simplify this expression. 
-The resulted expression is minimum but not unique. There may be other expressions which are also minimum.
+This expression is the same as the one we got from the canonical SOP. We can not further simplify this expression. The resulted expression is minimum but not unique. There may be other expressions which are also minimum.
 
-Example 1:
+#### Example 1
+
 $$
 F(A,B,C) = \sum m(1, 3, 5, 7)
 $$
-i. Find out number of vairables and number of cells in the K-Map.
 
-```text
+i. Find out number of variables and number of cells in the K-Map.
+
+```
 Number of variables = 3 (A, B, C)
 Number of cells = 2^3 = 8
 ```
 
 ii. Draw the K-Map and find the Boolean expression.
 
+<figure><img src=".gitbook/assets/k-map_example01.png" alt="" width="285"><figcaption><p>Example 01</p></figcaption></figure>
+
 $$
 F = C
 $$
 
-Example 2:
+#### Example 2
+
+Draw the K-Map and find the Boolean expression.
+
+<figure><img src=".gitbook/assets/k-map_example02.png" alt="" width="273"><figcaption><p>Example 02</p></figcaption></figure>
+
 $$
 F(A,B,C) = \sum m(0, 1, 2, 4, 7)
 $$
@@ -70,7 +77,12 @@ $$
 F = B'.C' + A'.B' + A'.C' + A.B.C
 $$
 
-Example 3:
+#### Example 3
+
+Draw the K-Map and find the Boolean expression.
+
+<figure><img src=".gitbook/assets/k-map_example03.png" alt="" width="265"><figcaption><p>Example 03</p></figcaption></figure>
+
 $$
 F(A,B,C) = \sum m(1, 3, 6, 7)
 $$
@@ -79,7 +91,20 @@ $$
 F = A.B + A'.C
 $$
 
-Example 4:
+#### Example 4
+
+Draw the K-Map and find the Boolean expression.
+
+<div>
+
+<figure><img src=".gitbook/assets/k-map_example04.png" alt="" width="263"><figcaption><p>One way</p></figcaption></figure>
+
+ 
+
+<figure><img src=".gitbook/assets/k-map_example04_.png" alt="" width="270"><figcaption><p>Another way</p></figcaption></figure>
+
+</div>
+
 $$
 F(A,B,C) = \sum m(0, 1, 5, 6, 7)
 $$
