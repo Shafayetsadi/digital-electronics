@@ -132,17 +132,36 @@ $$
 \begin{align*}
     F   &= (A+B+C)(A+B'+C)(A+B+C') \\
         &= (A+B+C)(A+B+C')(A+B'+C) \quad \#Commulative \quad law \\
-        &= (X+CC')(A+B'+C) \quad let, \quad X=A+B \quad \#Distributive \quad lad \\
+        &= (X+C.C')(A+B'+C) \quad let, \quad X=A+B \quad \#Distributive \quad lad \\
         &= (X+0)(A+B'+C) \\
         &= X(A+B'+C) \\
-        &= (A+B)(A+B'+C)
+        &= (A+B)(A+B'+C) \\
+        &= A+B(B'+C) \\
+        &= A + B.B' + BC \\
+        &= A + 0 + C \\
+        &= A+C
 \end{align*}
 $$
 
 Example 4:
 
 $$
-F=(A+B)(A+B')(A'+B)(A'B')
+\begin{align*}
+    F   &= (A+B)(A+B')(A'+B)(A'B') \\
+        &= (A + B.B')(A'+B.B') \\
+        &= (A+0)(A'+b) \\
+        &= A.A' \\
+        &= 0
+\end{align*}
+$$
+
+Example 5:
+
+$$
+\begin{align*}
+    F   &= A.B + A'.C + B.C \\
+        
+\end{align*}
 $$
 
 There are two ways to convert truth tables to Boolean functions:
