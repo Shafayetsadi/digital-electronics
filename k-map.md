@@ -42,7 +42,7 @@ $$
 
 This expression is the same as the one we got from the canonical SOP. We can not further simplify this expression. The resulted expression is minimum but not unique. There may be other expressions which are also minimum.
 
-#### Example 1
+### Example 1
 
 $$
 F(A,B,C) = \sum m(1, 3, 5, 7)
@@ -59,39 +59,48 @@ ii. Draw the K-Map and find the Boolean expression.
 
 <figure><img src=".gitbook/assets/k-map_example01.png" alt="" width="285"><figcaption><p>Example 01</p></figcaption></figure>
 
+The simplified expression is:
 $$
 F = C
 $$
 
-#### Example 2
-
-Draw the K-Map and find the Boolean expression.
-
-<figure><img src=".gitbook/assets/k-map_example02.png" alt="" width="273"><figcaption><p>Example 02</p></figcaption></figure>
+### Example 2
 
 $$
 F(A,B,C) = \sum m(0, 1, 2, 4, 7)
 $$
 
+Draw the K-Map and find the Boolean expression.
+
+<figure><img src=".gitbook/assets/k-map_example02.png" alt="" width="273"><figcaption><p>Example 02</p></figcaption></figure>
+
+
+The simplified expression is:
 $$
 F = B'.C' + A'.B' + A'.C' + A.B.C
 $$
 
-#### Example 3
-
-Draw the K-Map and find the Boolean expression.
-
-<figure><img src=".gitbook/assets/k-map_example03.png" alt="" width="265"><figcaption><p>Example 03</p></figcaption></figure>
+### Example 3
 
 $$
 F(A,B,C) = \sum m(1, 3, 6, 7)
 $$
 
+Draw the K-Map and find the Boolean expression.
+
+<figure><img src=".gitbook/assets/k-map_example03.png" alt="" width="265"><figcaption><p>Example 03</p></figcaption></figure>
+
+
+The simplified expression is:
 $$
 F = A.B + A'.C
 $$
 
-#### Example 4
+### Example 4
+
+$$
+F(A,B,C) = \sum m(0, 1, 5, 6, 7)
+$$
 
 Draw the K-Map and find the Boolean expression.
 
@@ -105,16 +114,15 @@ Draw the K-Map and find the Boolean expression.
 
 </div>
 
-$$
-F(A,B,C) = \sum m(0, 1, 5, 6, 7)
-$$
 
-$$
-F = A.B + A'B' + A.C
-$$
-
+The simplified expression for the left diagram is:
 $$
 F = A.B + A'B' + B'.C
+$$
+
+The simplified expression for the right diagram is:
+$$
+F = A.B + A'B' + A.C
 $$
 
 ## Pros ans Cons of K-Map
