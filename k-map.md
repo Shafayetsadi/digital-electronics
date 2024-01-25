@@ -13,10 +13,10 @@ The required boolean results are transferred from a truth table onto a two-dimen
 * Groups maybe horizontal or vertical, but not diagonal.
 * Group must contain $$2^n$$cells, like 1, 2, 4, or 8.
 * Groups should be as large as possible.
-* Each cell containing a 1 mus be in at least one group.
+* Each cell containing a 1 must be in at least one group.
 * Groups may overlap
 * Groups may wrap around the table. Like the leftmost cell in a row may be grouped with the rightmost cell in that row. Similar for columns also.
-*   Number of groups should be as few as possible.
+* Number of groups should be as few as possible.
 
 
 
@@ -24,20 +24,32 @@ The required boolean results are transferred from a truth table onto a two-dimen
 
 Canonical SOP:
 
-$$F = \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F= \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C)  \\ F = \bar A B \bar C + A \bar B + A B \\ F = \bar A B \bar C + A$$
-
-
+$$
+F = \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ 
+F = \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C)  \\
+F = \bar A B \bar C + A \bar B + A B \\ 
+F = \bar A B \bar C + A
+F= A + B \bar C
+$$
 
 <table data-full-width="false"><thead><tr><th align="center">A</th><th align="center">B</th><th width="173" align="center">C</th><th align="center">F</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
 
+K-Map Diagram for the above truth table:
+
+Check the change of variable in rows and columns for each group. The above diagram gives the following simplified expression:
+$$
+F = A + B \bar C
+$$
+This expression is the same as the one we got from the canonical SOP. We can not further simplify this expression.
+
 ## Pros ans Cons of K-Map
 
-#### Pros:
+### Pros
 
 * K-Map provides a visual and systematic method.
 * Easy to use.
 
-#### Cons:
+### Cons
 
 * Effective, but only up to 5-6 input variables.
 * Manual process.
