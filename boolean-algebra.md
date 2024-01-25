@@ -129,7 +129,14 @@ $$
 Example 3:
 
 $$
-F=(A+B+C)(A+B'+C)(A+B+C'
+\begin{align*}
+    F   &= (A+B+C)(A+B'+C)(A+B+C')
+        &= (A+B+C)(A+B+C')(A+B'+C) \quad # Commulative \quad law
+        &= (X+CC')(A+B'+C) \quad let, \quad X=A+B \quad # Distributive \quad lad
+        &= (X+0)(A+B'+C)
+        &= X(A+B'+C)
+        &= (A+B)(A+B'+C)
+\end{align*}
 $$
 
 Example 4:
