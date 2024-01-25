@@ -11,12 +11,22 @@ Truth Table:
 Boolean Function of SOP,&#x20;
 
 $$
-F = A'.B.C' + A.B'.C' + A.B'.C + A.B.C' + A.B.C
+\begin{align*}
+    F   &= A'.B.C' + A.B'.C' + A.B'.C + A.B.C' + A.B.C \\
+        &= A'.B.C' + A.B'(C'+C) + A.B(C'+C) \\
+        &= A'.B.C' + A.B' + A.B \\
+        &= A'.B.C' + A(B'+B) \\
+        &= A'.B.C' + A \\
+        &= A'.B.C' + A.(B'+B) \\
+        &= A'.B.C' + A \\
+        &= A + B.C' \\
+\end{align*}
 $$
 
 This is known as standard or canonical SOP form. Because it is written directly from a truth table.
 
-Minterm:
+### Minterm
+
 $$
 F(A,B,C)=m_2+m_4+m_5+m_6+m_7 \\
 F(A,B,C)=\sum(2, 4, 5, 6, 7)
