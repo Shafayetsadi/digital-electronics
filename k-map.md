@@ -20,7 +20,7 @@ The required boolean results are transferred from a truth table onto a two-dimen
 
 ## Examples
 
-## Example 0
+### Example 0
 
 Truth Table:
 
@@ -142,7 +142,7 @@ The groups we make in K-Map are called implicants. There are two types of implic
 
 Example:
 
-<figure><img src=".gitbook/assets/primeImplicants.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/primeImplicants.png" width="270" alt=""><figcaption></figcaption></figure>
 
 Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group.&#x20;
 
@@ -152,7 +152,7 @@ Group-3: It is a prime implicant and also an essential prime implicant. Because 
 
 ## 4-Variable K-Map
 
-### Example 1:
+### Example 5
 
 $$
 F(A,B,C,D)=\sum m(0,2,3,7,11,13,14,15)
@@ -170,7 +170,7 @@ F = CD + A'B'D' + ABC + ABD
 \end{align*}
 $$
 
-### Example 2:
+### Example 6
 
 $$
 F(A,B,C,D) = \sum m (0,2,3,5,7,8,10,11,14,15)
@@ -186,7 +186,7 @@ $$
 F= CD + B'D' + AC + A'BD
 $$
 
-### Example 3
+### Example 7
 
 $$
 F(X,Y,Z,W)=\sum m (1, 5, 7, 9, 11, 13, 15)
@@ -204,6 +204,7 @@ $$
 
 ## Don't Care in K-Map
 
+Don't care is a condition where the output value does not matter. It can be either 0 or 1. We use X to represent don't care condition in K-Map. We can use don't care condition to reduce the number of literals in a boolean expression. We can not use don't care condition to reduce the number of variables. 
 
 
 If all the values of K-map cells are 1, then answer is 1.
