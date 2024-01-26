@@ -125,6 +125,21 @@ $$
 F = A.B + A'B' + A.C
 $$
 
+## Implicants
+
+The groups we make in K-Map are called implicants. There are two types of implicants:
+
+* Prime Implicants: It is the largest possible group that can be made in a K-Map.
+* Essential Prime Implicants: It is the prime implicant that contains at least one cell with 1 that is not contained in any other prime implicant.
+
+Example:
+
+Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group. 
+Group-2: It is a prime implicant but not an essential prime implicant. Because both of the 1s of this group can be included in other groups.
+Group-3: It is a prime implicant and also an essential prime implicant. Because the upper 1 of this group can not be included in any other group. 
+
+
+
 ## Pros ans Cons of K-Map
 
 ### Pros
