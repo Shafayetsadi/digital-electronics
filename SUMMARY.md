@@ -9,3 +9,4 @@
 * [SOP & POS](sop-and-pos.md)
 * [K-Map](k-map.md)
 * [QM Method](qm-method.md)
+* [Adder & Subtractor](adder-and-subtractor.md)
