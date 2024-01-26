@@ -36,7 +36,7 @@ Step  3 & 4:
 {% tab title="Table 1" %}
 
 
-<table><thead><tr><th width="115" align="center">Group</th><th align="center">Matched Pairs</th><th align="center">A  B  C  D</th><th>Matched</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">m_0, m_1<br>m_0, m_8</td><td align="center">0  0  0  d<br>d  0  0  0</td><td>✅<br>✅</td></tr><tr><td align="center">1</td><td align="center">m_1, m_3<br>m_1, m_9<br>m_8, m_9</td><td align="center">0  0  d  0<br>d  0  0  1<br>1  0  0  d</td><td>✅<br>✅<br>✅</td></tr><tr><td align="center">2</td><td align="center">m_3, m_7<br>m_3, m_11<br>m_9, m_11</td><td align="center">0  d  1  1<br>d  0  1  1<br>1  0  d  1</td><td>✅<br>✅<br>✅</td></tr><tr><td align="center">3</td><td align="center">m_7, m_15<br>m_11, m_15</td><td align="center">d  1  1  1<br>1  d  1  1</td><td>✅<br>✅</td></tr></tbody></table>
+<table><thead><tr><th width="115" align="center">Group</th><th align="center">Matched Pairs</th><th align="center">A  B  C  D</th><th>Matched</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">m_0, m_1<br>m_0, m_8</td><td align="center">0  0  0  d<br>d  0  0  0</td><td>✅<br>✅</td></tr><tr><td align="center">1</td><td align="center">m_1, m_3<br>m_1, m_9<br>m_8, m_9</td><td align="center">0  0  d  1<br>d  0  0  1<br>1  0  0  d</td><td>✅<br>✅<br>✅</td></tr><tr><td align="center">2</td><td align="center">m_3, m_7<br>m_3, m_11<br>m_9, m_11</td><td align="center">0  d  1  1<br>d  0  1  1<br>1  0  d  1</td><td>✅<br>✅<br>✅</td></tr><tr><td align="center">3</td><td align="center">m_7, m_15<br>m_11, m_15</td><td align="center">d  1  1  1<br>1  d  1  1</td><td>✅<br>✅</td></tr></tbody></table>
 
 
 {% endtab %}
