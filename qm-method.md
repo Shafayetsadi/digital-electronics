@@ -77,7 +77,7 @@ Step  3 & 4:
 {% endtab %}
 
 {% tab title="Table 2" %}
-<table><thead><tr><th width="104">Group</th><th width="248" align="center">Matched Pair</th><th width="234" align="center">A  B  C  D</th><th>Prime Imp</th></tr></thead><tbody><tr><td>0</td><td align="center">m_0,m_1,  m_8,m_9<br>m_0,m_8,  m_1,m_9</td><td align="center">d  0  0  d<br>d  0  0  d</td><td>B'C'</td></tr><tr><td>1</td><td align="center">m_1,m_3,  m_9,m_11<br>m_1,m_9,  m_5,m_11</td><td align="center">d  0  d  1<br>d  0   d  1</td><td>B'C</td></tr><tr><td>3</td><td align="center">m_3,m_7,  m_11,m_15<br>m_3,m_11,  m_7,m_15</td><td align="center">d  d  1  1<br>d  d  1  1</td><td>CD</td></tr></tbody></table>
+<table><thead><tr><th width="104">Group</th><th width="248" align="center">Matched Pair</th><th width="234" align="center">A  B  C  D</th><th>Prime Imp</th></tr></thead><tbody><tr><td>0</td><td align="center">m_0,m_1,  m_8,m_9<br>m_0,m_8,  m_1,m_9</td><td align="center">d  0  0  d<br>d  0  0  d</td><td>B'C'</td></tr><tr><td>1</td><td align="center">m_1,m_3,  m_9,m_11<br>m_1,m_9,  m_3,m_11</td><td align="center">d  0  d  1<br>d  0   d  1</td><td>B'C</td></tr><tr><td>3</td><td align="center">m_3,m_7,  m_11,m_15<br>m_3,m_11,  m_7,m_15</td><td align="center">d  d  1  1<br>d  d  1  1</td><td>CD</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
