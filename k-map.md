@@ -60,6 +60,7 @@ ii. Draw the K-Map and find the Boolean expression.
 <figure><img src=".gitbook/assets/k-map_example01.png" alt="" width="285"><figcaption><p>Example 01</p></figcaption></figure>
 
 The simplified expression is:
+
 $$
 F = C
 $$
@@ -74,8 +75,8 @@ Draw the K-Map and find the Boolean expression.
 
 <figure><img src=".gitbook/assets/k-map_example02.png" alt="" width="273"><figcaption><p>Example 02</p></figcaption></figure>
 
-
 The simplified expression is:
+
 $$
 F = B'.C' + A'.B' + A'.C' + A.B.C
 $$
@@ -90,8 +91,8 @@ Draw the K-Map and find the Boolean expression.
 
 <figure><img src=".gitbook/assets/k-map_example03.png" alt="" width="265"><figcaption><p>Example 03</p></figcaption></figure>
 
-
 The simplified expression is:
+
 $$
 F = A.B + A'.C
 $$
@@ -114,13 +115,14 @@ Draw the K-Map and find the Boolean expression.
 
 </div>
 
-
 The simplified expression for the left diagram is:
+
 $$
 F = A.B + A'B' + B'.C
 $$
 
 The simplified expression for the right diagram is:
+
 $$
 F = A.B + A'B' + A.C
 $$
@@ -134,9 +136,58 @@ The groups we make in K-Map are called implicants. There are two types of implic
 
 Example:
 
-Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group. 
-Group-2: It is a prime implicant but not an essential prime implicant. Because both of the 1s of this group can be included in other groups.
-Group-3: It is a prime implicant and also an essential prime implicant. Because the upper 1 of this group can not be included in any other group. 
+<figure><img src=".gitbook/assets/primeImplicants.png" alt=""><figcaption></figcaption></figure>
+
+Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group.&#x20;
+
+Group-2: It is a prime implicant but not an essential prime implicant. Because both of the 1s of this group can be included in other groups.&#x20;
+
+Group-3: It is a prime implicant and also an essential prime implicant. Because the upper 1 of this group can not be included in any other group.
+
+## 4-Variable K-Map
+
+Example 1:
+
+$$
+F(A,B,C,D)=\sum m(0,2,3,7,11,13,14,15)
+$$
+
+Answer:
+
+<figure><img src=".gitbook/assets/4VariableExample1.png" alt="" width="266"><figcaption><p>Example 1</p></figcaption></figure>
+
+The boolean expression from the K-map is,
+
+$$
+\begin{align*}
+F = CD + A'B'D' + ABC + ABD
+\end{align*}
+$$
+
+Example 2:
+
+$$
+F(A,B,C,D) = \sum m (0,2,3,5,7,8,10,11,14,15)
+$$
+
+Answer:
+
+<figure><img src=".gitbook/assets/4VariableExample2.png" alt="" width="269"><figcaption><p>Example 2</p></figcaption></figure>
+
+The boolean expression from the K-map is,
+
+$$
+F= CD + B'D' + AC + A'BD
+$$
+
+If all the values of K-map cells are 1, then answer is 1.
+
+When we,
+
+* &#x20;combine 2 1's -> 1 literal is reduced.
+* combine 4 1's -> 2 literals are reduced.
+* combine 8 1's -> 3 literals are reduced.
+* combine 16 1's -> 4 literals are reduced.
 
 
 
