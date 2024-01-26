@@ -204,14 +204,80 @@ $$
 
 ## Don't Care in K-Map
 
-Don't care is a condition where the output value does not matter. It can be either 0 or 1. We use X to represent don't care condition in K-Map. We can use don't care condition to reduce the number of literals in a boolean expression. We can not use don't care condition to reduce the number of variables. 
+Don't care is a condition where the output value does not matter. It can be either 0 or 1. We use X to represent don't care condition in K-Map. We can use don't care condition to reduce the number of literals in a boolean expression. We can not use don't care condition to reduce the number of variables. We can assign both 0 or 1 to the don't care conditions. We assign 1 in case we want to reduce the K-map by using minterms. We assign 0 in case we want to reduce the K-map by using maxterms.
 
+### Example 8
+
+$$
+F(A, B, C) = \sum m(2, 3, 4, 5) + \sum d(6, 7)
+$$
+Answer:
+We will assign 0 to the don't care conditions as we are using minterms. The K-Map is,
+
+The boolean expression from the K-map is,
+$$
+F = A + B
+$$
+If we don't count the don't care, then the boolean expressio is,
+$$
+\begin{align*}
+    F &= A'B + AB' \\
+      &= A \oplus B 
+\end{align*}
+$$
+
+## K-Map using Maxterm
+
+### Example 9
+
+Find the boolean expression for the given K-map using maxterms,
+
+Answer:
+The boolean expression from the K-map is,
+$$
+\begin{align*}
+\bar F &= A'B' + A'C \\
+(\bar F)' &= (A'B' + A'C)' \quad D'Morgan Law \\
+F &= (A'B')'.(A'C)' \\
+    &= (A+B).(A+C') \quad POS \\
+    &= A + BC'
+\end{align*}
+$$
+We can see that, if we would have used minterms, the answer would be same.
+
+### Example 10
+
+$$
+F(A, B, C, D) = \sum m(1, 3, 4, 5, 9, 11, 14, 15)
+$$
+Answer:
+$$
+F(A, B, C, D) = \Pi M(0, 2, 6, 7, 8, 10, 12, 13)
+$$
+The boolean expression from the K-map is,
+$$
+\begin{align*}
+\bar F &= B'D' + ABC' + A'BC \\
+F = (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\
+\end{align*}
+$$
+
+## 5-Variable K-Map
+
+Number of cells will be 2^5 = 32
+This map will be a 3-dimensional map.
+
+$$
+F(A,B,C,D,E)
+$$
+
+## Some Tips
 
 If all the values of K-map cells are 1, then answer is 1.
 
 When we,
 
-* &#x20;combine 2 1's -> 1 literal is reduced.
+* combine 2 1's -> 1 literal is reduced.
 * combine 4 1's -> 2 literals are reduced.
 * combine 8 1's -> 3 literals are reduced.
 * combine 16 1's -> 4 literals are reduced.
