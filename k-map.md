@@ -262,7 +262,7 @@ $$
 
 Answer:
 
-First let us convert the minterms to maxterms.&#x20;
+First let us convert the minterms to maxterms.
 
 $$
 F(A, B, C, D) = \Pi M(0, 2, 6, 7, 8, 10, 12, 13)
@@ -273,8 +273,7 @@ $$
 The boolean expression from the K-map is,
 
 $$
-\begin{align*}
-\bar F &= B'D' + A'BC + ABC' \\ F &= (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\ \end{align*}
+\begin{align*} \bar F &= B'D' + A'BC + ABC' \\ F &= (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\ \end{align*}
 $$
 
 ## 5-Variable K-Map
@@ -288,8 +287,6 @@ $$
 <figure><img src=".gitbook/assets/5variablemap.png" alt=""><figcaption><p>5 Variable K-map</p></figcaption></figure>
 
 Skip for now
-
-
 
 ## Example from Morris Mano
 
@@ -347,9 +344,37 @@ $$
 F=C' + AB'
 $$
 
+### Example 3.4
 
+$$
+F=A'C + A'B + AB'C' + BC
+$$
 
+<figure><img src=".gitbook/assets/3.4.png" alt="" width="365"><figcaption></figcaption></figure>
 
+### Example 3.5
+
+$$
+F(A,B,C,D) = \sum(0, 1, 2, 4, 5, 6, 8, 9, 12, 13, 14)
+$$
+
+<figure><img src=".gitbook/assets/3.5.png" alt="" width="293"><figcaption></figcaption></figure>
+
+### Example 3.6
+
+$$
+F=A'B'C' + B'CD' + A'BCD' + AB'C'
+$$
+
+<figure><img src=".gitbook/assets/3.6.png" alt="" width="321"><figcaption></figcaption></figure>
+
+### Example 3.8
+
+$$
+F(A, B, C, D) = \sum(0, 1, 2, 5, 8, 9, 10)
+$$
+
+<figure><img src=".gitbook/assets/3.8.png" alt=""><figcaption></figcaption></figure>
 
 
 
