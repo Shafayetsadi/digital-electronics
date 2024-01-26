@@ -212,7 +212,7 @@ $$
 F(A, B, C) = \sum m(2, 3, 4, 5) + \sum d(6, 7)
 $$
 Answer:
-We will assign 0 to the don't care conditions as we are using minterms. The K-Map is,
+We will assign 1 to the don't care conditions as we are using minterms. The K-Map is,
 
 The boolean expression from the K-map is,
 $$
