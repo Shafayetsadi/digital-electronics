@@ -274,7 +274,7 @@ The boolean expression from the K-map is,
 
 $$
 \begin{align*}
-\bar F &= B'D' + ABC' + A'BC \\ F &= (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\ \end{align*}
+\bar F &= B'D' + A'BC + ABC' \\ F &= (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\ \end{align*}
 $$
 
 ## 5-Variable K-Map
