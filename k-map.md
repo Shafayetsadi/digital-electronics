@@ -18,7 +18,13 @@ The required boolean results are transferred from a truth table onto a two-dimen
 * Groups may wrap around the table. Like the leftmost cell in a row may be grouped with the rightmost cell in that row. Similar for columns also.
 * Number of groups should be as few as possible.
 
-## Example
+## Examples
+
+## Example 0
+
+Truth Table:
+
+<table data-full-width="false"><thead><tr><th align="center">A</th><th align="center">B</th><th width="173" align="center">C</th><th align="center">F</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
 
 Canonical SOP:
 
@@ -26,7 +32,7 @@ $$
 \begin{align*} F &= \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F &= \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C) \\ F &= \bar A B \bar C + A \bar B + A B \\ F &= \bar A B \bar C + A \\ F &= A + B \bar C \end{align*}
 $$
 
-<table data-full-width="false"><thead><tr><th align="center">A</th><th align="center">B</th><th width="173" align="center">C</th><th align="center">F</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
+
 
 K-Map Diagram for the above truth table:
 
@@ -146,7 +152,7 @@ Group-3: It is a prime implicant and also an essential prime implicant. Because 
 
 ## 4-Variable K-Map
 
-Example 1:
+### Example 1:
 
 $$
 F(A,B,C,D)=\sum m(0,2,3,7,11,13,14,15)
@@ -164,7 +170,7 @@ F = CD + A'B'D' + ABC + ABD
 \end{align*}
 $$
 
-Example 2:
+### Example 2:
 
 $$
 F(A,B,C,D) = \sum m (0,2,3,5,7,8,10,11,14,15)
@@ -179,6 +185,26 @@ The boolean expression from the K-map is,
 $$
 F= CD + B'D' + AC + A'BD
 $$
+
+### Example 3
+
+$$
+F(X,Y,Z,W)=\sum m (1, 5, 7, 9, 11, 13, 15)
+$$
+
+Answer:
+
+<figure><img src=".gitbook/assets/4VariableExample3.png" alt="" width="271"><figcaption><p>Example 3</p></figcaption></figure>
+
+The boolean expression from the K-map is,
+
+$$
+F = Z'W + YW + XW
+$$
+
+## Don't Care in K-Map
+
+
 
 If all the values of K-map cells are 1, then answer is 1.
 
