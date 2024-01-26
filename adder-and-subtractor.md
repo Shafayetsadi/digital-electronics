@@ -100,3 +100,5 @@ A full adder can be implemented using two half adders and one OR gate.
 ## Four-bit Parallel Adder using Full Adder
 
 A four-bit parallel adder can be implemented using four full adders.
+
+<figure><img src=".gitbook/assets/fourBitFullAdder.png" alt=""><figcaption><p>Four bit full adder</p></figcaption></figure>
