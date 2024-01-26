@@ -32,8 +32,6 @@ $$
 \begin{align*} F &= \bar A B \bar C + A \bar B \bar C + A \bar B C + A B \bar C + A B C \\ F &= \bar A B \bar C + A \bar B ( \bar C + C ) + A B ( C + \bar C) \\ F &= \bar A B \bar C + A \bar B + A B \\ F &= \bar A B \bar C + A \\ F &= A + B \bar C \end{align*}
 $$
 
-
-
 K-Map Diagram for the above truth table:
 
 <figure><img src=".gitbook/assets/k-map_3_var.png" alt="" width="452"><figcaption><p>K-Map Diagram</p></figcaption></figure>
@@ -142,11 +140,11 @@ The groups we make in K-Map are called implicants. There are two types of implic
 
 Example:
 
-<figure><img src=".gitbook/assets/primeImplicants.png" width="270" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/primeImplicants.png" alt="" width="270"><figcaption></figcaption></figure>
 
-Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group.&#x20;
+Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group.
 
-Group-2: It is a prime implicant but not an essential prime implicant. Because both of the 1s of this group can be included in other groups.&#x20;
+Group-2: It is a prime implicant but not an essential prime implicant. Because both of the 1s of this group can be included in other groups.
 
 Group-3: It is a prime implicant and also an essential prime implicant. Because the upper 1 of this group can not be included in any other group.
 
@@ -165,9 +163,7 @@ Answer:
 The boolean expression from the K-map is,
 
 $$
-\begin{align*}
-F = CD + A'B'D' + ABC + ABD
-\end{align*}
+\begin{align*} F = CD + A'B'D' + ABC + ABD \end{align*}
 $$
 
 ### Example 6
@@ -211,19 +207,33 @@ Don't care is a condition where the output value does not matter. It can be eith
 $$
 F(A, B, C) = \sum m(2, 3, 4, 5) + \sum d(6, 7)
 $$
-Answer:
-We will assign 1 to the don't care conditions as we are using minterms. The K-Map is,
+
+Answer: We will assign 1 to the don't care conditions as we are using minterms. The K-Map is,
+
+<div>
+
+<figure><img src=".gitbook/assets/dontCare_01.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src=".gitbook/assets/dontCare_02.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src=".gitbook/assets/dontCare_03.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 The boolean expression from the K-map is,
+
 $$
 F = A + B
 $$
-If we don't count the don't care, then the boolean expressio is,
+
+If we don't count the don't care, then the boolean expression is,
+
 $$
-\begin{align*}
-    F &= A'B + AB' \\
-      &= A \oplus B 
-\end{align*}
+\begin{align*} F &= A'B + AB' \\ &= A \oplus B \end{align*}
 $$
 
 ## K-Map using Maxterm
@@ -232,44 +242,118 @@ $$
 
 Find the boolean expression for the given K-map using maxterms,
 
-Answer:
-The boolean expression from the K-map is,
+<figure><img src=".gitbook/assets/kmapMaxterm_01.png" alt="" width="282"><figcaption></figcaption></figure>
+
+Answer: The boolean expression from the K-map is,
+
 $$
-\begin{align*}
-\bar F &= A'B' + A'C \\
-(\bar F)' &= (A'B' + A'C)' \quad D'Morgan Law \\
-F &= (A'B')'.(A'C)' \\
-    &= (A+B).(A+C') \quad POS \\
-    &= A + BC'
-\end{align*}
+\begin{align*} \bar F &= A'B' + A'C \\ (\bar F)' &= (A'B' + A'C)' \quad D'Morgan Law \\ F &= (A'B')'.(A'C)' \\ &= (A+B).(A+C') \quad POS \\ &= A + BC' \end{align*}
 $$
+
 We can see that, if we would have used minterms, the answer would be same.
 
 ### Example 10
 
+Find the simplified expressions using maxterms.
+
 $$
 F(A, B, C, D) = \sum m(1, 3, 4, 5, 9, 11, 14, 15)
 $$
+
 Answer:
+
+First let us convert the minterms to maxterms.&#x20;
+
 $$
 F(A, B, C, D) = \Pi M(0, 2, 6, 7, 8, 10, 12, 13)
 $$
+
+<figure><img src=".gitbook/assets/kmapMaxterm_02.png" alt="" width="265"><figcaption></figcaption></figure>
+
 The boolean expression from the K-map is,
+
 $$
 \begin{align*}
-\bar F &= B'D' + ABC' + A'BC \\
-F = (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\
-\end{align*}
+\bar F &= B'D' + ABC' + A'BC \\ F &= (B+D).(A+B'+C').(A'+B'+C) \quad D'Morgan Law \\ \end{align*}
 $$
 
 ## 5-Variable K-Map
 
-Number of cells will be 2^5 = 32
-This map will be a 3-dimensional map.
+Number of cells will be 2^5 = 32 This map will be a 3-dimensional map.
 
 $$
 F(A,B,C,D,E)
 $$
+
+<figure><img src=".gitbook/assets/5variablemap.png" alt=""><figcaption><p>5 Variable K-map</p></figcaption></figure>
+
+Skip for now
+
+
+
+## Example from Morris Mano
+
+### Example 3.1
+
+Simplify the Boolean function,
+
+$$
+F(x, y, z) = \sum (2, 3, 4, 5)
+$$
+
+Ans:
+
+<figure><img src=".gitbook/assets/3.1.png" alt="" width="378"><figcaption></figcaption></figure>
+
+The boolean function is,
+
+$$
+F=AB'+A'B
+$$
+
+### Example 3.2
+
+Simplify the Boolean function,
+
+$$
+F(A,B,C)=\sum (3, 4, 6, 7)
+$$
+
+Ans:
+
+<figure><img src=".gitbook/assets/3.2.png" alt="" width="385"><figcaption></figcaption></figure>
+
+The boolean function is,
+
+$$
+F=AC' + BC
+$$
+
+### Example 3.3
+
+Simplify the Boolean function,
+
+$$
+F(A,B,C)=\sum (0,2,4,5,6)
+$$
+
+Ans:
+
+<figure><img src=".gitbook/assets/3.3.png" alt="" width="395"><figcaption></figcaption></figure>
+
+The boolean function is,
+
+$$
+F=C' + AB'
+$$
+
+
+
+
+
+
+
+
 
 ## Some Tips
 
@@ -281,8 +365,6 @@ When we,
 * combine 4 1's -> 2 literals are reduced.
 * combine 8 1's -> 3 literals are reduced.
 * combine 16 1's -> 4 literals are reduced.
-
-
 
 ## Pros ans Cons of K-Map
 
