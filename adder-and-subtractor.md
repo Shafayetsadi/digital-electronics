@@ -102,3 +102,8 @@ A full adder can be implemented using two half adders and one OR gate.
 A four-bit parallel adder can be implemented using four full adders.
 
 <figure><img src=".gitbook/assets/fourBitFullAdder.png" alt=""><figcaption><p>Four bit full adder</p></figcaption></figure>
+
+
+## Subtractor
+
+A subtractor is a combinational circuit that performs the subtraction of two bits and produces a difference bit and a borrow bit. It has two inputs: A and B, which are the minuend and subtrahend, and two outputs: D and B, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 

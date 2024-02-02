@@ -72,3 +72,9 @@ Recording of audio -> Tocci -> page 8
 
 ### Transfer of information among Resisters
 
+
+## Combinational & Sequential Logic
+
+In combinational logic, the outputs depend only on the current inputs. 
+
+In sequential logic, the outputs depend on the current inputs and the past inputs. Meaning, we have memory to store the past inputs. The memory is in the form of flip-flops.
