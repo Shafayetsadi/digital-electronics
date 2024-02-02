@@ -104,6 +104,81 @@ A four-bit parallel adder can be implemented using four full adders.
 <figure><img src=".gitbook/assets/fourBitFullAdder.png" alt=""><figcaption><p>Four bit full adder</p></figcaption></figure>
 
 
-## Subtractor
+## Half Subtractor
 
-A subtractor is a combinational circuit that performs the subtraction of two bits and produces a difference bit and a borrow bit. It has two inputs: A and B, which are the minuend and subtrahend, and two outputs: D and B, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 
+A half subtractor is a combinational circuit that performs the subtraction of two bits and produces a difference bit and a borrow bit. It has two inputs: A and B, which are the minuend and subtrahend, and two outputs: D and Bo, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 
+
+Truth Table for half subtractor:
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+\ A \ & \ B \ & \ D \ & \ B_o \ \\
+\hline
+0 & 0 & 0 & 0 \\
+\hline
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 1 & 0 \\
+\hline
+1 & 1 & 0 & 0 \\
+\hline
+\end{array}
+$$
+
+The boolean expression for the difference bit is:
+$$
+D = A \oplus B
+$$
+
+The boolean expression for the borrow bit is:
+$$
+B_o = A'.B
+$$
+
+Logic gate for half subtractor:
+<figure><img src=".gitbook/assets/halfSubtractorLogicGate.png" alt="" width="513"><figcaption><p>Half subtractor</p></figcaption></figure>
+
+## Full Subtractor
+
+A full subtractor is a combinational circuit that performs the subtraction of three bits (two significant bits and a previous borrow) and produces a difference bit and a borrow bit. It has three inputs: A, B and $$B_{in}$$, which are the minuend, subtrahend and borrow in, and two outputs: D and $$B_{out}$$, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 
+
+Truth Table for full subtractor:
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+\ A \ & \ B \ & \ B_{in} \ & \ D \ & \ B_{out} \ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+\hline
+0 & 0 & 1 & 1 & 1 \\
+\hline
+0 & 1 & 0 & 1 & 1 \\
+\hline
+0 & 1 & 1 & 0 & 1 \\
+\hline
+1 & 0 & 0 & 1 & 0 \\
+\hline
+1 & 0 & 1 & 0 & 0 \\
+\hline
+1 & 1 & 0 & 0 & 0 \\
+\hline
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{array}
+$$
+
+The K-map for the difference bit is:
+<figure><img src=".gitbook/assets/fullSubtractorDifferenceBit.png" alt="" width="280"><figcaption><p>K-map for difference bit</p></figcaption></figure>
+
+The boolean expression for the difference bit is:
+$$
+D = A \oplus B \oplus B_{in}
+$$
+
+The K-map for the borrow bit is:
+<figure><img src=".gitbook/assets/fullSubtractorBorrowBit.png" alt="" width="280"><figcaption><p>K-map for borrow bit</p></figcaption></figure>
+
+The boolean expression for the borrow bit is:
+$$
+B_{out} = B.C + A'.B + A'.C
+$$
