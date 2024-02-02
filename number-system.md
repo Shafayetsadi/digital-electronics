@@ -132,6 +132,46 @@ And the code word is 1001011.
 | 1 | 1 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 0 |
 
+$$
+\begin{array}{|c|c|c|c|c|}
+\hline
+b_3 & b_2 & b_1 & b_0 & P_0 \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+\hline
+0 & 0 & 0 & 1 & 1 \\
+\hline
+0 & 0 & 1 & 0 & 1 \\
+\hline
+0 & 0 & 1 & 1 & 0 \\
+\hline
+0 & 1 & 0 & 0 & 1 \\
+\hline
+0 & 1 & 0 & 1 & 0 \\
+\hline
+0 & 1 & 1 & 0 & 0 \\
+\hline
+0 & 1 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 0 & 1 \\
+\hline
+1 & 0 & 0 & 1 & 0 \\
+\hline
+1 & 0 & 1 & 0 & 0 \\
+\hline
+1 & 0 & 1 & 1 & 1 \\
+\hline
+1 & 1 & 0 & 0 & 0 \\
+\hline
+1 & 1 & 0 & 1 & 1 \\
+\hline
+1 & 1 & 1 & 0 & 1 \\
+\hline
+1 & 1 & 1 & 1 & 0 \\
+\hline
+\end{array}
+$$
+
 The K-map for the parity bit is:
 <figure><img src=".gitbook/assets/number-system/parity-kmap.png" alt=""><figcaption><p>K-map for parity bit</p></figcaption></figure>
 
