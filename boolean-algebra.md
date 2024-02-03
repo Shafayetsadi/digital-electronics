@@ -14,25 +14,51 @@ Truth table for basic logic operation:
 
 {% tabs %}
 {% tab title="AND" %}
-<table><thead><tr><th align="center">A</th><th width="153" align="center">B</th><th align="center">A.B</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
+$$
+\begin{array}{|cc|c|}
+\hline
+\text{A} & \text{B} & \text{AB} \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+1 & 1 & 1 \\
+\hline
+\end{array}
+$$
+
 {% endtab %}
 
 {% tab title="OR" %}
-|  A  |  B  | A+B |
-| :-: | :-: | :-: |
-|  0  |  0  |  0  |
-|  0  |  1  |  1  |
-|  1  |  0  |  1  |
-|  1  |  1  |  1  |
+$$
+\begin{array}{|cc|c|}
+\hline
+\text{A} & \text{B} & \text{A+B} \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 1 \\
+\hline
+\end{array}
+$$
 {% endtab %}
 
 {% tab title="NOT" %}
-|  A  | \~A |
-| :-: | :-: |
-|  0  |  1  |
-|  1  |  0  |
+$$
+\begin{array}{|c|c|}
+\hline
+\text{A} & \sim \text{A} \\
+\hline
+0 & 1 \\
+1 & 0 \\
+\hline
+\end{array}
+$$
 {% endtab %}
 {% endtabs %}
+
+
 
 The order of evaluation is:
 

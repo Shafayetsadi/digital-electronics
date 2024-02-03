@@ -23,8 +23,22 @@ The required boolean results are transferred from a truth table onto a two-dimen
 ### Example 0
 
 Truth Table:
-
-<table data-full-width="false"><thead><tr><th align="center">A</th><th align="center">B</th><th width="173" align="center">C</th><th align="center">F</th></tr></thead><tbody><tr><td align="center">0</td><td align="center">0</td><td align="center">0</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">0</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">0</td><td align="center">1</td><td align="center">1</td><td align="center">0</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">0</td><td align="center">1</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">1</td></tr><tr><td align="center">1</td><td align="center">1</td><td align="center">1</td><td align="center">1</td></tr></tbody></table>
+$$
+\begin{array}{|ccc|c|}
+\hline
+\text{A} & \text{B} & \text{C} & \text{F} \\
+\hline
+0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 1 \\
+0 & 1 & 1 & 0 \\
+1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 1 \\
+1 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+\hline
+\end{array}
+$$
 
 Canonical SOP:
 
