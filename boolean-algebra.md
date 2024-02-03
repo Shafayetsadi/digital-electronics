@@ -152,7 +152,9 @@ $$
 Example 2:
 
 $$
-\begin{align*} F &= A.B + A.B'C + AB'C' \\ &= A(B+B'C+B'C') \\ &= A(B+C+B'C') \quad \# Distributive \, law \\ &= A(B+C+C') \quad \# Distributive \, law \\ &= A(B+1) \\ &= A.1 \\ &= A \end{align*}
+\begin{align*} F &= A.B + A.B'C + AB'C' \\ &= A(B+B'C+B'C') \\ &= A(B+C+B'C') \quad \text{Distributive law} \\ 
+&= A(B+C+C') \quad \text{Distributive law} \\ 
+&= A(B+1) \\ &= A.1 \\ &= A \end{align*}
 $$
 
 Example 3:
@@ -160,8 +162,8 @@ Example 3:
 $$
 \begin{align*}
     F   &= (A+B+C)(A+B'+C)(A+B+C') \\
-        &= (A+B+C)(A+B+C')(A+B'+C) \quad \#Commulative\, law \\
-        &= (X+C.C')(A+B'+C) \quad let, \quad X=A+B \quad \#Distributive \, law \\
+        &= (A+B+C)(A+B+C')(A+B'+C) \quad \text{Commulative law} \\
+        &= (X+C.C')(A+B'+C) \quad let, \quad X=A+B \quad \text{Distributive law} \\
         &= (X+0)(A+B'+C) \\
         &= X(A+B'+C) \\
         &= (A+B)(A+B'+C) \\
