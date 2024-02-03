@@ -34,7 +34,7 @@ $$
 
 K-Map Diagram for the above truth table:
 
-<figure><img src=".gitbook/assets/k-map_3_var.png" alt="" width="452"><figcaption><p>K-Map Diagram</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/k-map_3_var.png" alt="" width="452"><figcaption><p>K-Map Diagram</p></figcaption></figure>
 
 Check the change of value of variables in rows and columns for each group. We will only take the variables that does not change in a row or a column and do AND operation. We do the same thing for every group and do OR operation with each group.
 
@@ -61,7 +61,7 @@ Number of cells = 2^3 = 8
 
 ii. Draw the K-Map and find the Boolean expression.
 
-<figure><img src=".gitbook/assets/k-map_example01.png" alt="" width="285"><figcaption><p>Example 01</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/k-map_example01.png" alt="" width="285"><figcaption><p>Example 01</p></figcaption></figure>
 
 The simplified expression is:
 
@@ -77,7 +77,7 @@ $$
 
 Draw the K-Map and find the Boolean expression.
 
-<figure><img src=".gitbook/assets/k-map_example02.png" alt="" width="273"><figcaption><p>Example 02</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/k-map_example02.png" alt="" width="273"><figcaption><p>Example 02</p></figcaption></figure>
 
 The simplified expression is:
 
@@ -93,7 +93,7 @@ $$
 
 Draw the K-Map and find the Boolean expression.
 
-<figure><img src=".gitbook/assets/k-map_example03.png" alt="" width="265"><figcaption><p>Example 03</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/k-map_example03.png" alt="" width="265"><figcaption><p>Example 03</p></figcaption></figure>
 
 The simplified expression is:
 
@@ -111,11 +111,11 @@ Draw the K-Map and find the Boolean expression.
 
 <div>
 
-<figure><img src=".gitbook/assets/k-map_example04.png" alt="" width="263"><figcaption><p>One way</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/k-map_example04.png" alt="" width="263"><figcaption><p>One way</p></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/k-map_example04_.png" alt="" width="270"><figcaption><p>Another way</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/k-map_example04_.png" alt="" width="270"><figcaption><p>Another way</p></figcaption></figure>
 
 </div>
 
@@ -140,7 +140,7 @@ The groups we make in K-Map are called implicants. There are two types of implic
 
 Example:
 
-<figure><img src=".gitbook/assets/primeImplicants.png" alt="" width="270"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/primeImplicants.png" alt="" width="270"><figcaption></figcaption></figure>
 
 Group-1: It is a prime implicant and also an essential prime implicant. Because the lower 1 of this group can not be included in any other group.
 
@@ -158,7 +158,7 @@ $$
 
 Answer:
 
-<figure><img src=".gitbook/assets/4VariableExample1.png" alt="" width="266"><figcaption><p>Example 1</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/4VariableExample1.png" alt="" width="266"><figcaption><p>Example 1</p></figcaption></figure>
 
 The boolean expression from the K-map is,
 
@@ -174,7 +174,7 @@ $$
 
 Answer:
 
-<figure><img src=".gitbook/assets/4VariableExample2.png" alt="" width="269"><figcaption><p>Example 2</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/4VariableExample2.png" alt="" width="269"><figcaption><p>Example 2</p></figcaption></figure>
 
 The boolean expression from the K-map is,
 
@@ -190,7 +190,7 @@ $$
 
 Answer:
 
-<figure><img src=".gitbook/assets/4VariableExample3.png" alt="" width="271"><figcaption><p>Example 3</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/4VariableExample3.png" alt="" width="271"><figcaption><p>Example 3</p></figcaption></figure>
 
 The boolean expression from the K-map is,
 
@@ -212,15 +212,15 @@ Answer: We will assign 1 to the don't care conditions as we are using minterms. 
 
 <div>
 
-<figure><img src=".gitbook/assets/dontCare_01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/dontCare_01.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/dontCare_02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/dontCare_02.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/dontCare_03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/dontCare_03.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -242,7 +242,7 @@ $$
 
 Find the boolean expression for the given K-map using maxterms,
 
-<figure><img src=".gitbook/assets/kmapMaxterm_01.png" alt="" width="282"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/kmapMaxterm_01.png" alt="" width="282"><figcaption></figcaption></figure>
 
 Answer: The boolean expression from the K-map is,
 
@@ -268,7 +268,7 @@ $$
 F(A, B, C, D) = \Pi M(0, 2, 6, 7, 8, 10, 12, 13)
 $$
 
-<figure><img src=".gitbook/assets/kmapMaxterm_02.png" alt="" width="265"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/kmapMaxterm_02.png" alt="" width="265"><figcaption></figcaption></figure>
 
 The boolean expression from the K-map is,
 
@@ -284,7 +284,7 @@ $$
 F(A,B,C,D,E)
 $$
 
-<figure><img src=".gitbook/assets/5variablemap.png" alt=""><figcaption><p>5 Variable K-map</p></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/5variablemap.png" alt=""><figcaption><p>5 Variable K-map</p></figcaption></figure>
 
 Skip for now
 
@@ -300,7 +300,7 @@ $$
 
 Ans:
 
-<figure><img src=".gitbook/assets/3.1.png" alt="" width="378"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.1.png" alt="" width="378"><figcaption></figcaption></figure>
 
 The boolean function is,
 
@@ -318,7 +318,7 @@ $$
 
 Ans:
 
-<figure><img src=".gitbook/assets/3.2.png" alt="" width="385"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.2.png" alt="" width="385"><figcaption></figcaption></figure>
 
 The boolean function is,
 
@@ -336,7 +336,7 @@ $$
 
 Ans:
 
-<figure><img src=".gitbook/assets/3.3.png" alt="" width="395"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.3.png" alt="" width="395"><figcaption></figcaption></figure>
 
 The boolean function is,
 
@@ -350,7 +350,7 @@ $$
 F=A'C + A'B + AB'C' + BC
 $$
 
-<figure><img src=".gitbook/assets/3.4.png" alt="" width="365"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.4.png" alt="" width="365"><figcaption></figcaption></figure>
 
 ### Example 3.5
 
@@ -358,7 +358,7 @@ $$
 F(A,B,C,D) = \sum(0, 1, 2, 4, 5, 6, 8, 9, 12, 13, 14)
 $$
 
-<figure><img src=".gitbook/assets/3.5.png" alt="" width="293"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.5.png" alt="" width="293"><figcaption></figcaption></figure>
 
 ### Example 3.6
 
@@ -366,7 +366,7 @@ $$
 F=A'B'C' + B'CD' + A'BCD' + AB'C'
 $$
 
-<figure><img src=".gitbook/assets/3.6.png" alt="" width="321"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.6.png" alt="" width="321"><figcaption></figcaption></figure>
 
 ### Example 3.8
 
@@ -374,7 +374,7 @@ $$
 F(A, B, C, D) = \sum(0, 1, 2, 5, 8, 9, 10)
 $$
 
-<figure><img src=".gitbook/assets/3.8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/k-map/3.8.png" alt=""><figcaption></figcaption></figure>
 
 
 
