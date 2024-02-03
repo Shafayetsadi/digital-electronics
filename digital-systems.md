@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Digital Systems
 
 ## Numerical Representation
@@ -35,7 +21,7 @@ digital == discrete
 
 ## Analog System and Digital System
 
-A digital system is a combination of devices designed to manipulate logical information or physical quantities that are represented in digital form; that is, the quantities can take on only discrete values.&#x20;
+A digital system is a combination of devices designed to manipulate logical information or physical quantities that are represented in digital form; that is, the quantities can take on only discrete values.
 
 An analog system contains devices that manipulate quantities that are represented in analog form. These quantities can vary over a continuous range of values.
 
