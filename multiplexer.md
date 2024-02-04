@@ -4,8 +4,8 @@ A multiplexer is a combinational circuit that selects one of many input signals 
 
 ## Advantages
 
-* Multiplexers are used to reduce the number of logic gates required to perform a particular function.
-* Multiplexers are used to reduce the number of pins required to connect a large number of inputs to a device.
+* Reduces the number of logic gates required to perform a particular function.
+* Reduces the number of pins required to connect a large number of inputs to a device.
 * Reduces the complexity of the circuit and cost.
 
 ## Types of Multiplexers
@@ -24,7 +24,7 @@ where _n_ is the number of input lines and _m_ is the number of selection lines.
 
 The block diagram of a 2-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/2to1MultiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of a 2-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/2to1MultiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of a 2-to-1 multiplexer</p></figcaption></figure>
 
 From the block diagram, it can be seen that a 2-to-1 multiplexer has 2 input lines, 1 selection line, and 1 output line. We also have an enable line (E) which is used to enable the multiplexer. The selection line is used to select one of the input lines. The output of the multiplexer is the selected input line. The truth table for a 2-to-1 multiplexer is shown below:
 
@@ -49,7 +49,7 @@ $$
 
 The logic diagram for a 2-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/2to1MultiplexerLogicDiagram.png" alt=""><figcaption><p>Logic diagram of a 2-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/2to1MultiplexerLogicDiagram.png" alt=""><figcaption><p>Logic diagram of a 2-to-1 multiplexer</p></figcaption></figure>
 
 ### 4-to-1 Multiplexer
 
@@ -57,7 +57,7 @@ A 4-to1 multiplexer has 4 input lines, 2 selection lines, and 1 output line. The
 
 The block diagram of a 4-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/multiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of a 4-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/4to1multiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of a 4-to-1 multiplexer</p></figcaption></figure>
 
 The truth table for a 4-to-1 multiplexer is shown below:
 
@@ -90,7 +90,7 @@ An 8-to-1 multiplexer has 8 input lines, 3 selection lines, and 1 output line. T
 
 The block diagram of an 8-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/8to1MultiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/8to1MultiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer</p></figcaption></figure>
 
 The truth table for an 8-to-1 multiplexer is shown below:
 
@@ -122,7 +122,7 @@ $$
 
 The logic diagram for an 8-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/8to1MultiplexerLogicDiagram.png" alt=""><figcaption><p>Logic diagram of an 8-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/8to1MultiplexerLogicDiagram.png" alt=""><figcaption><p>Logic diagram of an 8-to-1 multiplexer</p></figcaption></figure>
 
 ## Mux Tree
 
