@@ -126,9 +126,11 @@ A four-bit parallel adder can be implemented using four full adders.
 
 ## Half Subtractor
 
-A half subtractor is a combinational circuit that performs the subtraction of two bits and produces a difference bit and a borrow bit. It has two inputs: A and B, which are the minuend and subtrahend, and two outputs: D and Bo, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 
+A half subtractor is a combinational circuit that performs the subtraction of two bits and produces a difference bit and a borrow bit. It has two inputs: A and B, which are the minuend and subtrahend, and two outputs: D and Bo, which are the difference and borrow out. The borrow out is used in the next stage of subtraction.
 
 <figure><img src=".gitbook/assets/adder-subtractor/HalfSubtractor.png" alt="" width="545"><figcaption><p>Half subtractor</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/adder-subtractor/binary-subtract.png" alt="" width="260"><figcaption><p>2-Bit binary subtraction between</p></figcaption></figure>
 
 Truth Table for half subtractor:
 $$
