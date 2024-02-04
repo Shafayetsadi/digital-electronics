@@ -128,6 +128,8 @@ A four-bit parallel adder can be implemented using four full adders.
 
 A half subtractor is a combinational circuit that performs the subtraction of two bits and produces a difference bit and a borrow bit. It has two inputs: A and B, which are the minuend and subtrahend, and two outputs: D and Bo, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 
 
+<figure><img src=".gitbook/assets/adder-subtractor/HalfSubtractor.png" alt="" width="545"><figcaption><p>Half subtractor</p></figcaption></figure>
+
 Truth Table for half subtractor:
 $$
 \begin{array}{|c|c|c|c|}
@@ -152,7 +154,7 @@ $$
 
 The boolean expression for the borrow bit is:
 $$
-B_o = A'.B
+B_o = A'B
 $$
 
 Logic gate for half subtractor:
@@ -165,6 +167,8 @@ Todo
 ## Full Subtractor
 
 A full subtractor is a combinational circuit that performs the subtraction of three bits (two significant bits and a previous borrow) and produces a difference bit and a borrow bit. It has three inputs: A, B and $$B_{in}$$, which are the minuend, subtrahend and borrow in, and two outputs: D and $$B_{out}$$, which are the difference and borrow out. The borrow out is used in the next stage of subtraction. 
+
+<figure><img src=".gitbook/assets/adder-subtractor/FullSubtractor.png" alt="" width="545"><figcaption><p>Full subtractor</p></figcaption></figure>
 
 Truth Table for full subtractor:
 $$
@@ -229,6 +233,8 @@ Todo
 ## 2-bit Multiplier
 
 A 2-bit multiplier is a combinational circuit that performs the multiplication of two 2-bit numbers and produces a 4-bit product. It has two inputs: A and B, which are the multiplicand and multiplier, and four outputs: P0, P1, P2 and P3, which are the product bits.
+
+<figure><img src=".gitbook/assets/adder-subtractor/2BitMultiplier.png" alt=""><figcaption><p>2-bit multiplier</p></figcaption></figure>
 
 $$
 \begin{array}{cccc}

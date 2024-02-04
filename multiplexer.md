@@ -132,7 +132,7 @@ A mux tree is a combination of multiplexers used to select one of many input lin
 
 A 4-to-1 multiplexer can be implemented using 2-to-1 multiplexers. The block diagram of a 4-to-1 multiplexer using 2-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/4to1MuxUsing2to1Mux.png" alt=""><figcaption><p>Block diagram of a 4-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/4to1MuxUsing2to1Mux.png" alt=""><figcaption><p>Block diagram of a 4-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
 
 The truth table for a 4-to-1 multiplexer is shown below:
 
@@ -160,7 +160,7 @@ The logic diagram for a 4-to-1 multiplexer using 2-to-1 multiplexers is shown be
 
 An 8-to-1 multiplexer can be implemented using 2-to-1 multiplexers. The block diagram of an 8-to-1 multiplexer using 2-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/8to1MuxUsing2to1Mux.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/8to1MuxUsing2to1Mux.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
 
 The truth table for an 8-to-1 multiplexer is shown below:
 
@@ -191,7 +191,9 @@ The logic diagram for an 8-to-1 multiplexer using 2-to-1 multiplexers is shown b
 
 An 8-to-1 multiplexer can be implemented using 4-to-1 multiplexers. The block diagram of an 8-to-1 multiplexer using 4-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/8to1MuxUsing4to1Mux.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer using 4-to-1 multiplexers</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/8to1MuxUsing4to1Mux.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer using 4-to-1 multiplexers</p></figcaption></figure>
+
+We can take $$S_2$$ as the enalbe line for the 4-to-1 mux, because when $$S_2 = 0$$, it will select the upper 4-to-1 mux and when $$S_2 = 1$$, it will select the lower 4-to-1 mux. So it will act as a selector for the 8-to-1 mux.
 
 The truth table for an 8-to-1 multiplexer is shown below:
 
