@@ -4,7 +4,7 @@
 
 A half adder is a combinational circuit that performs the addition of two bits and produces a sum bit and a carry bit. It has two inputs: A and B, which add two input digits, and two outputs: S and C, which are the sum and carry out.
 
-<figure><img src=".gitbook/assets/HalfAdder.png" alt="" width="545"><figcaption><p>Half Adder</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/HalfAdder.png" alt="" width="545"><figcaption><p>Half Adder</p></figcaption></figure>
 
 Truth Table for Half Adder:
 
@@ -17,7 +17,7 @@ Truth Table for Half Adder:
 
 The K-Map for the sum bit is:
 
-<figure><img src=".gitbook/assets/halfAdderSumBit.png" alt="" width="182"><figcaption><p>K-map for sum bit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/halfAdderSumBit.png" alt="" width="182"><figcaption><p>K-map for sum bit</p></figcaption></figure>
 
 The boolean expression for the sum bit is:
 
@@ -27,7 +27,7 @@ $$
 
 The K-Map for the carry bit is:
 
-<figure><img src=".gitbook/assets/halfAdderCarryBit.png" alt="" width="180"><figcaption><p>K-map for carry bit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/halfAdderCarryBit.png" alt="" width="180"><figcaption><p>K-map for carry bit</p></figcaption></figure>
 
 The boolean expression for the carry bit is:
 
@@ -37,13 +37,13 @@ $$
 
 Logic gate for half adder:
 
-<figure><img src=".gitbook/assets/halfAdderLogicGate.png" alt="" width="513"><figcaption><p>Half Adder</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/halfAdderLogicGate.png" alt="" width="513"><figcaption><p>Half Adder</p></figcaption></figure>
 
 ### Half Adder using NAND Gates
 
 A half adder can be implemented using two NAND gates. The sum bit is the output of the first NAND gate and the carry bit is the output of the second NAND gate. 
 
-<figure><img src=".gitbook/assets/halfAdderUsingNANDGates.png" alt=""><figcaption><p>Half adder using NAND gates</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/halfAdderUsingNANDGates.png" alt=""><figcaption><p>Half adder using NAND gates</p></figcaption></figure>
 
 ### Half Adder using NOR Gates
 
@@ -53,20 +53,26 @@ Todo
 
 A full adder is a combinational circuit that performs the addition of three bits (two significant bits and a previous carry) and produces a sum bit and a carry bit. It has three inputs: A, B and $$C_{in}$$, which add three input digits, and two outputs: S and $$C_{out}$$, which are the sum and carry out.
 
-|  A  |  B  | C\_in |  S  | C\_out |
-| :-: | :-: | :---: | :-: | :----: |
-|  0  |  0  |   0   |  0  |    0   |
-|  0  |  0  |   1   |  1  |    0   |
-|  0  |  1  |   0   |  1  |    0   |
-|  0  |  1  |   1   |  0  |    1   |
-|  1  |  0  |   0   |  1  |    0   |
-|  1  |  0  |   1   |  0  |    1   |
-|  1  |  1  |   0   |  0  |    1   |
-|  1  |  1  |   1   |  1  |    1   |
+$$
+\begin{array}{|ccc|cc|}
+\hline
+\text{A} & \text{B} & C_{\text{in}} & \text{S} & C_{\text{out}} \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 1 & 0 \\
+0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{array}
+$$
 
 The K-map for for the sum bit is:
 
-<figure><img src=".gitbook/assets/k-mapFullAdderSumBit.png" alt="" width="280"><figcaption><p>K-map for sum bit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/k-mapFullAdderSumBit.png" alt="" width="280"><figcaption><p>K-map for sum bit</p></figcaption></figure>
 
 In the K-Map, we see a chess board configuration. We can not create any groups.
 
@@ -83,11 +89,11 @@ The K-map for the carry bit is:
 
 <div>
 
-<figure><img src=".gitbook/assets/fullAdderCarry1.png" alt=""><figcaption><p>One way</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fullAdderCarry1.png" alt=""><figcaption><p>One way</p></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/fullAdderCarry2.png" alt=""><figcaption><p>Another way</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fullAdderCarry2.png" alt=""><figcaption><p>Another way</p></figcaption></figure>
 
 </div>
 
@@ -109,13 +115,13 @@ Todo
 
 A full adder can be implemented using two half adders and one OR gate.
 
-<figure><img src=".gitbook/assets/fullAdderUsingHalfAdder.png" alt=""><figcaption><p>Full adder using half adder</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fullAdderUsingHalfAdder.png" alt=""><figcaption><p>Full adder using half adder</p></figcaption></figure>
 
 ## Four-bit Parallel Adder using Full Adder
 
 A four-bit parallel adder can be implemented using four full adders.
 
-<figure><img src=".gitbook/assets/fourBitFullAdder.png" alt=""><figcaption><p>Four bit full adder</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fourBitFullAdder.png" alt=""><figcaption><p>Four bit full adder</p></figcaption></figure>
 
 
 ## Half Subtractor
@@ -150,7 +156,7 @@ B_o = A'.B
 $$
 
 Logic gate for half subtractor:
-<figure><img src=".gitbook/assets/halfSubtractorLogicGate.png" alt="" width="513"><figcaption><p>Half subtractor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/halfSubtractorLogicGate.png" alt="" width="513"><figcaption><p>Half subtractor</p></figcaption></figure>
 
 ### Half Subtractor using NAND Gates
 
@@ -186,7 +192,7 @@ $$
 $$
 
 The K-map for the difference bit is:
-<figure><img src=".gitbook/assets/fullSubtractorDifferenceBit.png" alt="" width="280"><figcaption><p>K-map for difference bit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fullSubtractorDifferenceBit.png" alt="" width="280"><figcaption><p>K-map for difference bit</p></figcaption></figure>
 
 The boolean expression for the difference bit is:
 $$
@@ -194,7 +200,7 @@ D = A \oplus B \oplus B_{in}
 $$
 
 The K-map for the borrow bit is:
-<figure><img src=".gitbook/assets/fullSubtractorBorrowBit.png" alt="" width="280"><figcaption><p>K-map for borrow bit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fullSubtractorBorrowBit.png" alt="" width="280"><figcaption><p>K-map for borrow bit</p></figcaption></figure>
 
 The boolean expression for the borrow bit is:
 $$
@@ -202,7 +208,7 @@ B_{out} = B.C + A'.B + A'.C
 $$
 
 Logic gate for full subtractor:
-<figure><img src=".gitbook/assets/fullSubtractorLogicGate.png" alt="" width="513"><figcaption><p>Full subtractor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/adder-subtractor/fullSubtractorLogicGate.png" alt="" width="513"><figcaption><p>Full subtractor</p></figcaption></figure>
 
 ### Full Subtractor using NAND Gates
 

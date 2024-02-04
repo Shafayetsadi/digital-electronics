@@ -106,15 +106,15 @@ In the earliest computers, switches were opened and closed by magnetic fields pr
 
 <div align="center">
 
-<figure><img src=".gitbook/assets/AND.jpg" alt="AND Gate" width="188"><figcaption><p>AND Gate</p></figcaption></figure>
+<figure><img src=".gitbook/assets/boolean-algebra/AND.jpg" alt="AND Gate" width="188"><figcaption><p>AND Gate</p></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/OR.jpg" alt="" width="188"><figcaption><p>OR Gate</p></figcaption></figure>
+<figure><img src=".gitbook/assets/boolean-algebra/OR.jpg" alt="" width="188"><figcaption><p>OR Gate</p></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/NOT.jpg" alt="" width="188"><figcaption><p>NOT Gate</p></figcaption></figure>
+<figure><img src=".gitbook/assets/boolean-algebra/NOT.jpg" alt="" width="188"><figcaption><p>NOT Gate</p></figcaption></figure>
 
 </div>
 
@@ -136,12 +136,20 @@ $$
 
 {% tabs %}
 {% tab title="Example 1" %}
-|  A  |  B  | F=A.B + A.B' |
-| :-: | :-: | :----------: |
-|  0  |  0  |       0      |
-|  0  |  1  |       0      |
-|  1  |  0  |       1      |
-|  1  |  1  |       1      |
+
+$$
+\begin{array}{|cc|c|}
+\hline
+\text{A} & \text{B} & F=A.B + A.\overline{B} \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+1 & 0 & 1 \\
+1 & 1 & 1 \\
+\hline
+\end{array}
+$$
+
 {% endtab %}
 
 {% tab title="Example 2" %}
