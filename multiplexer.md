@@ -1,6 +1,6 @@
 # Multiplexer
 
-A multiplexer is a combinational circuit that selects one of many input signals and directs it to a single output. It is also known as a data selector. The selection of a particular input is controlled by a set of selection lines. The number of selection lines determines the number of input lines. A multiplexer with n selection lines can select one of 2^n input lines.
+A multiplexer is a combinational circuit that selects one of many input signals and directs it to a single output. It is also known as a data selector. The selection of a particular input is controlled by a set of selection lines. The number of selection lines determines the number of input lines. A multiplexer with n selection lines can select one of $$2^n$$ input lines.
 
 ## Advantages
 
@@ -24,9 +24,9 @@ where _n_ is the number of input lines and _m_ is the number of selection lines.
 
 The block diagram of a 2-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/mux/2to1MultiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of a 2-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/2to1MultiplexerBlockDiagram.png" alt="" width="300px"><figcaption><p>2-to-1 multiplexer</p></figcaption></figure>
 
-From the block diagram, it can be seen that a 2-to-1 multiplexer has 2 input lines, 1 selection line, and 1 output line. We also have an enable line (E) which is used to enable the multiplexer. The selection line is used to select one of the input lines. The output of the multiplexer is the selected input line. The truth table for a 2-to-1 multiplexer is shown below:
+From the block diagram, it can be seen that a 2-to-1 multiplexer has 2 input lines, 1 selection line, and 1 output line. We also have an enable line (E) which is used to enable the multiplexer. The selection line is used to select one of the input lines. The output of the multiplexer is the selected input line by the selection line. The truth table for a 2-to-1 multiplexer is shown below:
 
 $$
 \begin{array}{|c|c|c|}
@@ -47,17 +47,22 @@ Y = ES'I_0 + ESI_1 \\
 Y = E(S'I_0 + SI_1)
 $$
 
+We can ignore the enable line, because when the enable line is 0, the output is always 0. So the boolean expression for the output Y is:
+$$
+Y = S'I_0 + SI_1
+$$ 
+
 The logic diagram for a 2-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/mux/2to1MultiplexerLogicDiagram.png" alt=""><figcaption><p>Logic diagram of a 2-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/2to1MultiplexerLogicDiagram.png" alt="" width=400px><figcaption><p>Logic diagram of a 2-to-1 multiplexer</p></figcaption></figure>
 
 ### 4-to-1 Multiplexer
 
-A 4-to1 multiplexer has 4 input lines, 2 selection lines, and 1 output line. The selection lines are used to select one of the input lines. The output of the multiplexer is the selected input line.
+A 4-to1 multiplexer has 4 input lines, 2 selection lines, and 1 output line. 
 
 The block diagram of a 4-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/mux/4to1multiplexerBlockDiagram.png" alt=""><figcaption><p>Block diagram of a 4-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/4to1multiplexerBlockDiagram.png" alt=""><figcaption><p>4-to-1 multiplexer</p></figcaption></figure>
 
 The truth table for a 4-to-1 multiplexer is shown below:
 
@@ -82,7 +87,7 @@ $$
 
 The logic diagram for a 4-to-1 multiplexer is shown below:
 
-<figure><img src=".gitbook/assets/multiplexerLogicDiagram.png" alt=""><figcaption><p>Logic diagram of a 4-to-1 multiplexer</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/multiplexerLogicDiagram.png" alt="" width="500px"><figcaption><p>Logic diagram of a 4-to-1 multiplexer</p></figcaption></figure>
 
 ### 8-to-1 Multiplexer  
 
@@ -132,7 +137,7 @@ A mux tree is a combination of multiplexers used to select one of many input lin
 
 A 4-to-1 multiplexer can be implemented using 2-to-1 multiplexers. The block diagram of a 4-to-1 multiplexer using 2-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/mux/4to1MuxUsing2to1Mux.png" alt=""><figcaption><p>Block diagram of a 4-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/4to1MuxUsing2to1Mux.png" alt=""><figcaption><p>4-to-1 mux using 2-to-1 mux</p></figcaption></figure>
 
 The truth table for a 4-to-1 multiplexer is shown below:
 
@@ -151,16 +156,24 @@ $$
 
 The boolean expression for the output Y is:
 
+$$
+Y = S_1'S_0'I_0 + S_1'S_0I_1 + S_1S_0'I_2 + S_1S_0I_3
+$$
 
-The logic diagram for a 4-to-1 multiplexer using 2-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/4to1MuxUsing2to1MuxLogicDiagram.png" alt=""><figcaption><p>Logic diagram of a 4-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
+The logic diagram for a 4-to-1 mux using 2-to-1 mux is shown below:
+
+<figure><img src=".gitbook/assets/mux/4to1MuxUsing2to1MuxLogicDiagram.png" alt=""><figcaption><p>Logic diagram of a 4-to-1 mux using 2-to-1 mux</p></figcaption></figure>
+
+### 4-to-1 Mux using enable line/chip select
+
+To Do
 
 ### 8-to-1 Mux using 2-to-1 Mux
 
 An 8-to-1 multiplexer can be implemented using 2-to-1 multiplexers. The block diagram of an 8-to-1 multiplexer using 2-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/mux/8to1MuxUsing2to1Mux.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/8to1MuxUsing2to1Mux.png" alt="" width="500px"><figcaption><p>8-to-1 mux using 2-to-1 mux</p></figcaption></figure>
 
 The truth table for an 8-to-1 multiplexer is shown below:
 
@@ -183,15 +196,27 @@ $$
 
 The boolean expression for the output Y is:
 
+$$
+Todo
+$$
+
 The logic diagram for an 8-to-1 multiplexer using 2-to-1 multiplexers is shown below:
 
-<figure><img src=".gitbook/assets/8to1MuxUsing2to1MuxLogicDiagram.png" alt=""><figcaption><p>Logic diagram of an 8-to-1 multiplexer using 2-to-1 multiplexers</p></figcaption></figure>
+<figure><img src=".gitbook/assets/8to1MuxUsing2to1MuxLogicDiagram.png" alt=""><figcaption><p>Logic diagram of an 8-to-1 mux using 2-to-1 mux</p></figcaption></figure>
 
 ### 8-to-1 Mux using 4-to-1 Mux
 
-An 8-to-1 multiplexer can be implemented using 4-to-1 multiplexers. The block diagram of an 8-to-1 multiplexer using 4-to-1 multiplexers is shown below:
+An 8-to-1 multiplexer can be implemented using 4-to-1 multiplexers in two ways. The first way is to use 3 4-to-1 multiplexers with tree structure. The second way is to use 2 4-to-1 multiplexers with a not gate with one of the enable lines. The second way is more efficient than the first way.  
 
-<figure><img src=".gitbook/assets/mux/8to1MuxUsing4to1Mux.png" alt=""><figcaption><p>Block diagram of an 8-to-1 multiplexer using 4-to-1 multiplexers</p></figcaption></figure>
+The block diagram of the first approach is shown below:
+
+<figure><img src=".gitbook/assets/mux/8to1MuxUsing4to1MuxTree.png" alt="" width="500px"><figcaption><p>8-to-1 mux using 4-to-1 mux</p></figcaption></figure>
+
+In the mux tree, the two of the input lines for the later mux is grounded. This makes the later mux to act as a 2-to-1 mux, giving the outputs of the first two muxes to the later mux. The output of the later mux is the output of the 8-to-1 mux.
+
+The block diagram of the second approach is shown below:
+
+<figure><img src=".gitbook/assets/mux/8to1MuxUsing4to1Mux.png" alt="" width="500px"><figcaption><p>8-to-1 mux using 4-to-1 mux</p></figcaption></figure>
 
 We can take $$S_2$$ as the enalbe line for the 4-to-1 mux, because when $$S_2 = 0$$, it will select the upper 4-to-1 mux and when $$S_2 = 1$$, it will select the lower 4-to-1 mux. So it will act as a selector for the 8-to-1 mux.
 
@@ -220,9 +245,11 @@ The logic diagram for an 8-to-1 multiplexer using 4-to-1 multiplexers is shown b
 
 <figure><img src=".gitbook/assets/8to1MuxUsing4to1MuxLogicDiagram.png" alt=""><figcaption><p>Logic diagram of an 8-to-1 multiplexer using 4-to-1 multiplexers</p></figcaption></figure>
 
-### 32-to-1 Mux using
+### 16-to-1 Mux using 4-to-1 Mux
 
-### 64-to-1 Mux using
+<figure><img src=".gitbook/assets/mux/16to1MuxUsing4to1Mux.png" alt=""><figcaption><p>16-to-1 mux using 4-to-1 mux</p></figcaption></figure>
+
+To Do for semester final.
 
 
 ## Implementation of Boolean Function using Multiplexer
