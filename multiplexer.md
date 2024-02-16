@@ -254,11 +254,11 @@ To Do for semester final.
 
 ## Implementation of Boolean Function using Multiplexer
 
-### Example
+### Example 1
 
 Implement the boolean function $$F(A, B, C, D) = \Sigma m(1, 4, 5, 7, 9, 12, 13)$$ using a 4-to-1 multiplexer.
 
-### Solution
+Solution:
 
 Step 1: Identify the number of input lines required for the given boolean function. The number of input lines required is 4.
 
@@ -266,7 +266,7 @@ Step 2: Identify the number of selection lines required for the given boolean fu
 
 Step 3: Draw the K-map for the given boolean function.
 
-<figure><img src=".gitbook/assets/4to1MuxKMap.png" alt=""><figcaption><p>K-map for the given boolean function</p></figcaption></figure>
+<figure><img src=".gitbook/assets/mux/example-1-k-map.png" alt=""><figcaption><p>K-map for the given boolean function</p></figcaption></figure>
 
 Step 4: Write the table for the required multiplexer.
 
@@ -300,4 +300,79 @@ I_2 &= C'D' \\
 I_3 &= C' \\
 \end{aligned}
 $$
+
+
+## Full Adder using Multiplexer
+
+A 1-bit full adder can be implemented using a 4-to-1 multiplexer. The truth table for a full adder is shown below:
+
+$$
+\begin{array}{|ccc|cc|}
+\hline
+A & B & C_{in} & S & C_{out} \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 1 & 0 \\
+0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{array}
+$$
+
+The k-map for the sum output S is shown below:
+
+<figure><img src=".gitbook/assets/mux/full-adder-k-map.png" alt=""><figcaption><p>K-map for the sum output S</p></figcaption></figure>
+
+The table for the sum output S is shown below:
+
+$$
+\begin{array}{|cc|c|}
+\hline
+A & B & S \\
+\hline
+0 & 0 & I_0 \\
+0 & 1 & I_1 \\
+1 & 0 & I_2 \\
+1 & 1 & I_3 \\
+\hline
+\end{array}
+$$
+
+The boolean expression for the input lines are:
+
+$$
+\begin{aligned}
+I_0 &= C_{in} \\
+I_1 &= C_{in}' \\
+I_2 &= C_{in}' \\
+I_3 &= C_{in} \\
+\end{aligned}
+$$ 
+
+The k-map for the carry output $$C_{out}$$ is shown below:
+
+// To Do
+
+
+The logic diagram for a full adder using a 4-to-1 multiplexer is shown below:
+
+<figure><img src=".gitbook/assets/mux/full-adder-logic-diagram.png" alt=""><figcaption><p>Logic diagram for a full adder using a 4-to-1 multiplexer</p></figcaption></figure>
+
+## Logical Expression from Multiplexer
+
+The logical expression for the output of a mux can be obtained using the following steps:
+
+Step 1: Write the truth table for the output of given mux.
+
+Step 2: Write the boolean expression for the output of the mux.
+
+Step 3: Write the minterms for the output of the mux.
+
+Step 4: Write the sum of minterms for the output of the mux.
+
+Step 5: Simplify the sum of minterms for the output of the mux.
 
