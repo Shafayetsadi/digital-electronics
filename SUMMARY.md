@@ -12,3 +12,4 @@
 * [Adder & Subtractor](adder-and-subtractor.md)
 * [Seven Segment Display](seven-segment-display.md)
 * [Multiplexer](multiplexer.md)
+* [SR Latch](sr-latch.md)
