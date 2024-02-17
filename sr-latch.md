@@ -9,6 +9,16 @@ A latch is a memory device that stores the data in the form of 0s and 1s. It is 
 
 The SR latch is a circuit with two cross-coupled NOR gates or two cross-coupled NAND gates, and two inputs S(for set) and R(for reset). The output of one gate is connected to the input of the other gate and vice versa. The output of the first gate is Q and the output of the second gate is Q'. 
 
+## Types of Latches
+
+1. **SR Latch**: It has two inputs: S and R. It has two outputs: Q and Q'. It has two stable states: Set and Reset. It has two invalid states: Hold and Toggle.
+
+2. **D Latch**: It has one input: D. It has two outputs: Q and Q'. It has one stable state: Set. It has one invalid state: Hold.
+
+3. **JK Latch**: It has three inputs: J, K and CLK. It has two outputs: Q and Q'. It has four stable states: Set, Reset, Hold and Toggle.
+
+4. **T Latch**: It has one input: T. It has two outputs: Q and Q'. It has two stable states: Set and Reset. It has two invalid states: Hold and Toggle.
+
 ## SR Latch using NOR gates
 
 <figure><img src=".gitbook/assets/sr-latch/sr-latch.png" alt=""><figcaption><p>SR Latch</p></figcaption></figure>
@@ -68,10 +78,27 @@ S & R & Q & Q' \\
 \end{array}
 $$
 
-Q. Difference between latch and flip-flop?
-
-A. Latch is level triggered and flip-flop is edge triggered. Latch is faster than flip-flop. Flip-flop is more reliable than latch. Flip-flop is used in synchronous circuits and latch is used in asynchronous circuits.
 
 ## Clock signal
 
-The clock signal is used to synchronize the operation of the sequential circuits. The clock signal is a square wave signal. The clock signal is used to trigger the flip-flops. It is a periodic train of pulses which changes its states between the logic 1 and logic 0.
+The clock signal is used to synchronize the operation of the sequential circuits. The clock signal is a square wave signal. It is a periodic train of pulses which changes its states between the logic 1 and logic 0. It has 4 states: rising edge, falling edge, high state, and low state. Latches are level triggered and flip-flops are edge triggered. 
+
+Duty cycle is the ratio of the time period for which the signal is high to the time period for which the signal is low. It is expressed as a percentage. It is used to measure the stability of the clock signal. The duty cycle should be 50% for a stable clock signal.
+
+## Triggering Methods
+
+1. Edge triggering: The flip-flop is triggered by the rising edge or falling edge of the clock signal.
+2. Level triggering: The latch is triggered by the level of the clock signal.
+
+The clock pulse is applied to the latch or flip-flop to change the state of the output. We trigger the latch or flip-flop by the above two methods.
+
+Edge triggering is used in flip-flops. It has two types: positive edge triggering and negative edge triggering. In positive edge triggering, the output changes at the rising edge of the clock signal. In negative edge triggering, the output changes at the falling edge of the clock signal.
+
+Level triggering is used in latches. The output changes when the clock signal is high level or low level.
+
+## Differnce between latch and flip-flop
+
+1. Latch is level triggered and flip-flop is edge triggered.
+2. Latch is faster than flip-flop.
+3. Flip-flop is more reliable than latch.
+4. Flip-flop is used in synchronous circuits and latch is used in asynchronous circuits.

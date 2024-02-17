@@ -16,3 +16,4 @@
 * [Encoder](encoder.md)
 * [Decoder](decoder.md)
 * [SR Latch](sr-latch.md)
+* [Flip-Flops](flip-flops.md)
