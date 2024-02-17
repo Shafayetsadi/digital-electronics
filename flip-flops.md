@@ -130,3 +130,32 @@ Q_n & D & Q_{n+1} \\
 \end{array}
 $$
 
+
+The excitation table for D Flip-Flop is:
+$$
+\begin{array}{|cc|c|}
+\hline
+Q_n & Q_{n+1} & D \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 1 \\
+1 & 0 & 0 \\
+1 & 1 & 1 \\
+\hline
+\end{array}
+$$
+
+## JK Flip-Flop
+
+<firgure><img src=".gitbook/assets/jk-flip-flop/jk-flip-flop.png" alt=""><figcaption><p>JK Flip-Flop</p></figcaption></figure>
+
+Truth Table for JK Flip-Flop:
+$$
+\begin{array}{|ccc|cc|}
+\hline
+Clk & J & K & Q & Q' \\
+0 & x & x & \text{Not changed} & \text{Not changed} \\
+1 & 0 & 0 & \text{Not changed} & \text{Not changed} \\
+1 & 0 & 1 & 0 & 1 \\
+1 & 1 & 0 & 1 & 0 \\
+1 & 1 & 1 & \text{Toggle} & \text{Toggle} \\
