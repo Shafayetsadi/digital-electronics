@@ -159,3 +159,7 @@ Clk & J & K & Q & Q' \\
 1 & 0 & 1 & 0 & 1 \\
 1 & 1 & 0 & 1 & 0 \\
 1 & 1 & 1 & \text{Toggle} & \text{Toggle} \\
+\hline
+\end{array}
+$$
+
