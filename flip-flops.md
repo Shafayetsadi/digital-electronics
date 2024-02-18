@@ -14,7 +14,7 @@ A flip-flop is a sequential circuit which stores the data in the form of binary.
 
 ## SR Flip-Flop
 
-<firgure><img src=".gitbook/assets/sr-latch/sr-latch.png" alt=""><figcaption><p>SR Flip-Flop</p></figcaption></figure>
+<firgure><img src=".gitbook/assets/" alt=""><figcaption><p>SR Flip-Flop</p></figcaption></figure>
 
 Truth Table for NAND gate:
 $$
@@ -26,6 +26,7 @@ S^* & R^* & Q & Q' \\
 0 & 1 & 1 & 0 \\
 1 & 0 & 0 & 1 \\
 1 & 1 & \text{Not changed} & {Not Changed} \\
+\hline
 \end{array}
 $$
 
@@ -154,6 +155,7 @@ $$
 \begin{array}{|ccc|cc|}
 \hline
 Clk & J & K & Q & Q' \\
+\hline
 0 & x & x & \text{Not changed} & \text{Not changed} \\
 1 & 0 & 0 & \text{Not changed} & \text{Not changed} \\
 1 & 0 & 1 & 0 & 1 \\
